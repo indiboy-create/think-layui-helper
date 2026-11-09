@@ -1,0 +1,46 @@
+{
+    "name": "youvision/think-layui-helper",
+    "description": "ThinkPHP tree helper for Layui tree, treeTable, table, menu and nav components.",
+    "type": "library",
+    "keywords": [
+        "layui",
+        "tree",
+        "treeTable",
+        "table",
+        "menu",
+        "nav",
+        "tree-structure",
+        "category",
+        "thinkphp"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "youvision"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "topthink/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youvision\\ThinkLayuiHelper\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Youvision\\ThinkLayuiHelper\\Service"
+            ],
+            "config": {
+                "layui_helper": "config/layui_helper.php"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
